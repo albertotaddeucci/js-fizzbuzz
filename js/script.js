@@ -9,30 +9,21 @@ const grigliaElement = document.querySelector("#griglia");
 
 for (let i=1; i<=100; i++){
 
-    const newElement = document.createElement("div");
-    // console.log(newElement)
-    
-    grigliaElement.append(newElement);
-    
     //divisibile per entrambi
     if (i % 3 == 0 && i % 5 == 0){
-        // console.log("fizzbuzz")
-        newElement.innerHTML = "fizzbuz";
+        console.log("fizzbuzz")
 
     //divisibile per 3
     } else if (i % 3 == 0){
-        // console.log("fizz")
-        newElement.innerHTML = "fizz";
+        console.log("fizz")
 
     
     //divisibile per 5
     } else if (i % 5 == 0) {
-        // console.log("buzz")
-        newElement.innerHTML = "buzz";
-
+        console.log("buzz")
        
     } else {
-        newElement.innerHTML = `${i}`;
+        console.log(i)
 
     }
 
