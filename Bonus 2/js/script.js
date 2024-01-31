@@ -12,37 +12,37 @@ for (let i=1; i<=100; i++){
     const newDiv = document.createElement("div");
     const newSpan = document.createElement("span");
 
-    newDiv.className = "square"
-    newSpan.className = "in-square"
+    newDiv.className = "square";
+    newSpan.className = "in-square";
     
     
     //divisibile per entrambi
     if (i % 3 == 0 && i % 5 == 0){
-        newSpan.innerHTML = "FizzBuzz"
-        newSpan.style.fontWeight = "Bold"
-        newSpan.style.textDecoration = "underline"
-        newSpan.style.fontSize = "1.3em"
+        newSpan.innerHTML = "FizzBuzz";
+        newSpan.style.fontWeight = "Bold";
+        newSpan.style.textDecoration = "underline";
+        newSpan.style.fontSize = "1.3em";
 
-        newDiv.style.backgroundColor = "green"
+        newDiv.style.backgroundColor = "green";
         
         //divisibile per 3
     } else if (i % 3 == 0){
-        newSpan.innerHTML = "Fizz"
-        newSpan.style.fontWeight = "Bold"
+        newSpan.innerHTML = "Fizz";
+        newSpan.style.fontWeight = "Bold";
 
-        newDiv.style.backgroundColor = "yellow"        
+        newDiv.style.backgroundColor = "yellow"   ;     
         
         //divisibile per 5
     } else if (i % 5 == 0) {
-        newSpan.innerHTML = "Buzz"
-        newSpan.style.fontWeight = "Bold"
+        newSpan.innerHTML = "Buzz";
+        newSpan.style.fontWeight = "Bold";
 
-        newDiv.style.backgroundColor = "orange"
+        newDiv.style.backgroundColor = "orange";
       
         
     } else {
         newSpan.innerHTML = `${i}`;
-        newDiv.style.backgroundColor = "lightblue"
+        newDiv.style.backgroundColor = "lightblue";
         
     }
     
